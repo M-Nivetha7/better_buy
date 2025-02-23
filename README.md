@@ -1,2 +1,10 @@
-# disease_prediction
-sample for disease prediction
+Online Food Comparison API
+
+This project focuses on building a machine learning model to compare online food options based on various features such as price, rating, delivery time, cuisine type, and more. The model is designed to predict the best food option given specific input criteria. To make the model accessible and usable, it is deployed as a REST API using Flask, a lightweight Python web framework, and Gunicorn, a production-ready WSGI server. The API is exposed to the internet using Ngrok, allowing for easy testing and demonstration. The entire project is developed and tested in Google Colab, making it convenient for collaboration and sharing.
+
+The machine learning model is trained on a dataset containing relevant features of online food options. Once trained, the model is saved as a .pkl file using joblib for efficient loading and inference. The Flask app provides a /predict endpoint that accepts input data in JSON format and returns the model's prediction. For example, the input might include features like price, rating, and delivery time, and the output could indicate the best food option based on the model's analysis.
+
+To ensure the API can handle multiple requests and perform efficiently in a production-like environment, Gunicorn is used instead of Flask's built-in development server. Additionally, Ngrok is employed to create a temporary public URL, enabling users to access and test the API from anywhere. This setup is ideal for demonstration purposes, though for permanent deployment, the API can be hosted on cloud platforms like Heroku, AWS, or Google Cloud.
+
+The project is designed to be user-friendly and easily customizable. Users can replace the example input features with their own data to get predictions tailored to their specific needs. The integration of machine learning with a web API makes this project a practical tool for comparing online food options and making informed decisions. Whether for personal use, academic purposes, or as a prototype for a larger application, this project demonstrates the power of combining machine learning with web technologies to solve real-world problems.
+
